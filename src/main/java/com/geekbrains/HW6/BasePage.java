@@ -2,6 +2,7 @@ package com.geekbrains.HW6;
 // Lomtev Yuriy, 18/05/2022
 // Проведите рефакторинг ваших тестов (минимум одного) в соответствии с PageObject
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,6 +13,7 @@ public class BasePage {
     WebDriverWait webDriverWait;
 //    Actions action;
 
+//    @Step("Подготока страницы поисков: ")
     public BasePage(WebDriver driver) {
         this.driver = driver;
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
